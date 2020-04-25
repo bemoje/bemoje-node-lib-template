@@ -31,7 +31,7 @@
 		"build": "npm run test && npm run bench && npm run rollup && npm run docs && npm run description && npm run keywords && npm run readme",
 		"commit": "npm run repo gitCommit",
 		"git-delete": "rimraf .git && bash scripts/github-delete.sh bemoje bemoje-node-lib-template",
-		"git-create": "npm run repo gitCreate",
+		"git-create": "rimraf .git npm run repo gitCreate",
 		"publish": "npm run repo npmPublish"
 	},
 	"bugs": {
